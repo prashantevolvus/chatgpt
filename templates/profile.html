@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ user['name'] }}!</h1>
+    <p>Email: {{ user['email'] }}</p>
+    <p>Preferred Username: {{ user['preferred_username'] }}</p>
+    <p>Display Name: {{ user['display_name'] }}</p>
+    <p>Account ID: {{ user['oid'] }}</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<style>
+   
+    </style>
+<div class="list-group">
+    {% for option in menu_options %}
+    <a href="{{ option.url }}" class="list-group-item list-group-item-action {% if option.name == 'Define Test' %}active{% endif %}">
+        {{ option.name }}
+    </a>
+    {% endfor %}
+    <a href="{{ url_for('logout') }}" class="list-group-item list-group-item-action">Logout</a>
+</div>
